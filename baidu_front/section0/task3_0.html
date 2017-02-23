@@ -1,0 +1,29 @@
+<!-- 总结：浮动元素，是完全脱离文档流的，【其他元素】布局时，会忽略浮动元素，然后尽可能的向左向上移动，【元素中文字】会绕开浮动元素，但是【该元素】的边框还是不会绕开浮动元素 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01</title>
+	<style type="text/css">
+		*{padding: 0px; margin: 0px;}
+		body{background: #eee;}
+		.main{width: 80%;margin: 20px auto;border: 1px gray solid;padding: 20px;}
+		.left{float: left;width: 120px;height: 400px;background: red;border:1px gray solid;}
+		.right{float: right;width: 200px;height: 600px;background: green;border:1px gray solid;}
+		.maincontain{margin-left:140px;border:1px gray solid;margin-right: 220px;padding: 20px;}
+		.clear{clear: both;}
+		img{width: 400px;}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="maincontain">
+			<!-- <img src="./01.jpg"> -->
+			风的撒发生地方的滴滴答答滴滴答答滴滴答答滴滴答答滴滴答答滴滴答答滴滴答答滴滴答答滴滴发送到法的发生地方的发送到法的到法的发生地方撒到发送到发送到发送到法到法的发生的高大上的分公司咕咚咕咚戈德哈根复合肥确认fads 发生序啊发送到法事发当时方法的撒到发送到法发酵啤酒皮饭的撒风答滴滴答答滴滴答答滴滴答答滴滴答答滴滴答答滴滴答答
+		</div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css设计指南3-三栏固定宽度布局</title>
+	<style type="text/css">
+		#wrapper {width: 960px; margin: 0 auto; border: 1px solid;}
+		
+		/*三栏布局的内容*/
+		article {padding: 10px; background: #ffed53;float: left;width: 600px;}
+		/*使用该属性后，可以【自动】调节盒子模型（conten，padding），不会导致【后面的元素换行】*/
+		article {box-sizing: border-box;}
+	/*	aside {box-sizing: border-box;}
+		nav {box-sizing: border-box;}*/
+
+		aside {width: 210px; float: left; background: #3f7ccf;}
+		nav {width: 150px;float: left;}
+		
+		nav li {list-style-type: none;}
+		header {background: #f00;}
+		footer {background: #000;}
+		/*清除尾部视图之前的浮动*/
+		footer {clear: both;}
+		.clear_me {clear:both;}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>头部视图</header>
+		<nav>
+			<ul>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</nav>
+		<article>
+			这里是一段文本
+		</article>
+		<aside>
+			这个应该是最后一栏了，文字要比较多
+		</aside>
+		<footer>尾部视图</footer>
+		<div class="clear_me"></div>    
+	</div>
+</body>
+</html>

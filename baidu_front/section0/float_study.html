@@ -1,0 +1,29 @@
+<!-- 图片和文字都不会和浮动元素相重叠，这大概是浮动和定位的比较大的一个区别 【认真体会这句话】-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float特性研究</title>
+	<style type="text/css">
+		.photo1 {width: 300px;float: left;}
+		/*.photo1 {width: 300px;}*/
+		.photo2 {width: 300px;float: right;}
+		.clear:after {
+	       content:".";
+	       display:block;
+	       height:0;
+	       visibility:hidden;
+	       /*这里的clear:both是清除它的【兄弟元素】的浮动，这样after元素才能在【浮动元素下一行摆放】*/
+	       clear:both;
+		}
+	</style>
+</head>
+<body>
+	<div class="clear">
+		<img class="photo1" src="./01.jpg">
+	</div>
+	<div>
+		<img class="photo2" src="./01.jpg">
+	</div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?54xbms');
+    src:    url('../fonts/icomoon.eot?54xbms#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?54xbms') format('truetype'),
+        url('../fonts/icomoon.woff?54xbms') format('woff'),
+        url('../fonts/icomoon.svg?54xbms#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display:block;
+    width:100%;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {margin: 0px;padding: 0px;}
+
+body{
+    width: 1280px;
+    min-height:1266px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
+}
+
+ul {
+	list-style: none;
+}
+
+/*====================HEADER=====================*/
+header{
+    position:relative;
+    height: 56px;
+    background-color: #2189bf;
+}
+
+.site-log {
+	display: block;
+    position:absolute;
+    margin-left: 50px;
+    margin-top: 10px;
+    width:36px;
+    height:36px;
+}
+
+.icon-user:before {
+    content: "\e90a";
+    width:25px;
+    display:inline-block;
+    text-align:center;
+}
+.login-btn{
+    /*position:absolute;*/
+    float:right;
+    color: #fff;
+    font: 12px/56px HeiTi;
+    width:60px;
+    margin-right:60px;
+    text-decoration: none;
+}
+.login-btn:hover{
+    color:#eee;
+}
+
+/*搜索框*/
+.search{
+    float:right;
+    margin:14px 10px;
+    width: 313px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-sizing: border-box;
+    transition:width 0.5s ease-in 0.1s;
+}
+
+.search input{
+    float: right;
+    margin-right: 15px;
+    width: 270px;
+    height: 28px;
+    border:none;
+    margin-top: 0;
+    box-sizing: border-box;;
+    outline:none;
+}
+
+.icon-search:before {
+    content: "\e905";
+    float:left;
+    margin:6px 0 0 10px;
+    color:#ccc;
+}
+/*====================HEADER=====================*/
+
+/*====================ASIDE=====================*/
+aside {
+	width: 260px;
+	height: 1210px;
+	float: left;
+	background-color: #2b2e3d;
+	color: #6e8095;
+	font: 12px SimHei;
+}
+
+.user-info {
+	height: 150px;
+}
+
+.user-name {
+	height: 105px;
+}
+
+.user-logo {
+	border-radius: 23px;
+	width: 47px;
+	height: 47px;
+	box-shadow: 0 0 0 4px #2a2e3d, 0 0 0 5px #fff;
+	margin: 20px 25px 20px 45px;
+	float: left;
+}
+
+.user-name p {
+	font: 15px/87px 'Microsoft YaHei';
+	color: #fff;
+}
+
+.user-follow div{
+    float:left;
+    height:30px;
+    padding:0 32px;
+}
+.user-follow div span{
+    font-size:16px;
+}
+.user-follow div:first-child{
+    border-right:2px solid #6e8095;
+    margin-left:32px;
+}
+
+
+/*侧边栏表格*/
+.icon-file-text2:before {
+    content: "\e900";
+}
+.icon-file-picture:before {
+    content: "\e901";
+}
+.icon-folder-minus:before {
+    content: "\e902";
+}
+
+.icon-accessibility:before {
+    content: "\e906";
+}
+.icon-clipboard:before {
+    content: "\e907";
+}
+.icon-star-full:before {
+    content: "\e903";
+}
+.icon-table2:before {
+    content: "\e908";
+}
+.icon-share2:before {
+    content: "\e909";
+}
+
+
+.first-menu a:hover{
+    color:#ededef;
+}
+
+.first-menu a{
+    color:#6e8096;
+    text-decoration:none;
+    font:12px/48px SimHei;
+}
+
+.second-menu>a{
+    line-height:25px;
+}
+.third-menu>a{
+    line-height:24px;
+}
+
+/*拉开各个分组之间的间距*/
+.first-menu{
+    padding-left:70px;
+}
+
+.second-menu{
+    padding-left:20px;
+}
+.third-menu{
+    padding-left:40px;
+}
+
+/*显示第一个分组，鼠标放在其他分组可显示*/
+aside ul li dl{
+    display: none;
+}
+
+aside ul li:hover dl,
+aside ul li.first-menu-active dl{
+    display: block;
+}
+/*====================ASIDE=====================*/
+

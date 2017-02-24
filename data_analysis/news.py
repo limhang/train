@@ -10,6 +10,8 @@ from lxml import etree
 def StringListSave(save_path, filename, slist):
     if not os.path.exists(save_path):
         os.makedirs(save_path)
+
+    #因为是放在文件夹的，所以需要加上'/'
     path = save_path+"/"+filename+".md"
     with open(path, "w+") as fp:
         for s in slist:
